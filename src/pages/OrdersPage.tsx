@@ -3,7 +3,7 @@ import OrdersTable from '../components/orders/OrdersTable'
 
 const OrdersPage = () => {
   return (
-    <Container sx={{ display: 'flex', flexDirection: 'column' }}>
+    <Container maxWidth="xl" sx={{ display: 'flex', flexDirection: 'column' }}>
       <Box sx={{ pt: 5, mb: 5 }}>
         <Typography
           variant='h2'

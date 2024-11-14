@@ -9,18 +9,18 @@ interface IProps {
 }
 
 const OrderTablePagination = (
-  { 
+  {
     dataLength,
-    page, setPage, 
-    rowsPerPage, setRowsPerPage 
+    page, setPage,
+    rowsPerPage, setRowsPerPage
   }: IProps) => {
 
-  const handleChangePage = (
-    event: React.MouseEvent<HTMLButtonElement> | null,
-    newPage: number,
-  ) => {
+  const handleChangePage = (_: React.MouseEvent<HTMLButtonElement> | null,
+    newPage: number) => {
     setPage(newPage);
   };
+
+
 
   const handleChangeRowsPerPage = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,

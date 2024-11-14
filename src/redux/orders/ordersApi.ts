@@ -25,7 +25,7 @@ export const ordersApi = createApi({
       invalidatesTags: [{ type: 'Orders', id: 'LIST' }]
     }),
     editOrder: build.mutation({
-      query: ({ id, editData, newTotalPrice }: { id: number, editData: IOrderDetails[], newTotalPrice: number }) => ({
+      query: ({ id, editData, newTotalPrice }: { id?: number, editData: IOrderDetails[], newTotalPrice: number }) => ({
         url: `orders/${id}`,
         method: 'PATCH',
         body: { orderDetails: editData, totalPrice: newTotalPrice }
