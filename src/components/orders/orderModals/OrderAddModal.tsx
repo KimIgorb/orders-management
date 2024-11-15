@@ -86,7 +86,7 @@ const OrderAddModal = ({ isOpen, setIsOpen }: IProps) => {
       sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
     >
       <Box
-        sx={{ background: '#fff', py: 2, px: 3, minWidth: '500px' }}
+        sx={{ background: '#fff', py: 2, px: 3, maxWidth: { xs: '350px', md: '500px'} }}
         component={Paper}
       >
         <Typography

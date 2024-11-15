@@ -42,7 +42,7 @@ const OrderEditModal = ({ isOpen, setIsOpen, orderEdit }: IProps) => {
       sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
     >
       <Box
-        sx={{ background: '#fff', py: 2, px: 3, minWidth: '500px' }}
+        sx={{ background: '#fff', py: 2, px: 3, minWidth: { xs: '350px', md: '500px'} }}
         component={Paper}
       >
         <Typography variant='h6' component='h3' align='center' gutterBottom color='primary'>

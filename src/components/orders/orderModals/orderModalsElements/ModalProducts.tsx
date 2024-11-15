@@ -19,7 +19,7 @@ const ModalProducts = ({ product, onQuantityChange, onDelete }: IProps) => {
 
     onQuantityChange(product.id, newQuantity)
   };
-  
+
   return (
     <Box
       key={product.productName}
