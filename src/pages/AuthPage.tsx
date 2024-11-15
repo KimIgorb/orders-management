@@ -17,7 +17,7 @@ const AuthPage = () => {
       alignItems: 'center',
       height: '100vh',
     }}>
-      <Box sx={{ width: '25%', textAlign: 'center' }}>
+      <Box sx={{ width: '25%', textAlign: 'center', minWidth: '300px' }}>
         <AuthTypography />
         <AuthForm />
       </Box>
